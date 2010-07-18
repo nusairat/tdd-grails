@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="1" failures="0" hostname="USS-Defiant-MacBook.local" id="0" name="GameServiceIntegrationSpec" package="com.tekspike" tests="2" time="2.078" timestamp="2010-07-17T22:46:36">
+      <properties />
+
+      <testcase classname="com.tekspike.GameServiceIntegrationSpec" name="test all eligible" time="1.944" />
+
+      <testcase classname="com.tekspike.GameServiceIntegrationSpec" name="test one not eligible" time="0.117">
+          <error type="java.lang.reflect.UndeclaredThrowableException">java.lang.reflect.UndeclaredThrowableException
+	at com.tekspike.GameServiceIntegrationSpec.test one not eligible(GameServiceIntegrationSpec.groovy:31)
+Caused by: com.tekspike.CantScheduleGameException
+	at com.tekspike.GameService.save(GameService.groovy:21)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from test all eligible--
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Hibernate: 
+    insert 
+    into
+        team
+        (id, version, active, name) 
+    values
+        (null, ?, ?, ?)
+Hibernate: 
+    call identity()
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Hibernate: 
+    insert 
+    into
+        team
+        (id, version, active, name) 
+    values
+        (null, ?, ?, ?)
+Hibernate: 
+    call identity()
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Hibernate: 
+    insert 
+    into
+        team
+        (id, version, active, name) 
+    values
+        (null, ?, ?, ?)
+Hibernate: 
+    call identity()
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Hibernate: 
+    insert 
+    into
+        team
+        (id, version, active, name) 
+    values
+        (null, ?, ?, ?)
+Hibernate: 
+    call identity()
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Crew
+[joe 3 for Crew, joe 4 for Crew, joe 1 for Crew, joe 2 for Crew]
+ ********************************* 
+Hibernate: 
+    insert 
+    into
+        game
+        (id, version, away_score, away_team_id, date, home_score, home_team_id) 
+    values
+        (null, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    call identity()
+--Output from test one not eligible--
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Hibernate: 
+    insert 
+    into
+        team
+        (id, version, active, name) 
+    values
+        (null, ?, ?, ?)
+Hibernate: 
+    call identity()
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Hibernate: 
+    insert 
+    into
+        team
+        (id, version, active, name) 
+    values
+        (null, ?, ?, ?)
+Hibernate: 
+    call identity()
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Hibernate: 
+    insert 
+    into
+        team
+        (id, version, active, name) 
+    values
+        (null, ?, ?, ?)
+Hibernate: 
+    call identity()
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Hibernate: 
+    insert 
+    into
+        team
+        (id, version, active, name) 
+    values
+        (null, ?, ?, ?)
+Hibernate: 
+    call identity()
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Hibernate: 
+    select
+        this_.id as id1_0_,
+        this_.version as version1_0_,
+        this_.active as active1_0_,
+        this_.name as name1_0_ 
+    from
+        team this_ 
+    where
+        this_.name=?
+Crew
+[joe 2 for Crew, joe 3 for Crew, joe 4 for Crew, joe 1 for Crew]
+ ********************************* 
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test all eligible--
+--Output from test one not eligible--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
